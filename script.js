@@ -50,4 +50,4 @@ fetch("https://restcountries.com/v3.1/all") // elküldjük adatért a JS-t, viss
                 <h4>country population: ${data[i].population}</h4>
             `
         }
-    }) 
+    })
