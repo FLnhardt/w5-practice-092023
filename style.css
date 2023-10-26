@@ -1,6 +1,6 @@
 html {
-    background-color: rgb(186, 217, 178);
-    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(237, 233, 196);
+    font-family: 'Dancing Script', cursive;
 }
 
 div#root {
@@ -21,8 +21,62 @@ div.country {
     align-items: center;
     gap: 20px;
 
+    color: black;
+
     padding: 20px;
+
+    transition: all 0.5s ease;
 }
+
+div.country.clicked {
+    transform: rotate(180deg);
+}
+
+div:nth-child(5n - 4).country.clicked {
+    border: 2px solid rgb(164, 88, 88);
+    color: rgb(164, 88, 88);
+    transform: rotate(90deg);
+}
+
+div:nth-child(5n - 3).country.clicked {
+    border: 2px solid rgb(63, 72, 50);
+    color: rgb(63, 72, 50);
+    transform: scale(5); 
+    
+    /*kiemeli az elemet*/
+}
+
+div:nth-child(5n - 2).country.clicked {
+    border: 7px solid rgb(99, 47, 47);
+    width: fit-content;
+    color:rgb(122, 87, 23);
+    animation: mymove 5s infinite;
+    
+}
+@keyframes mymove {
+    50% {color:rgb(36, 50, 15)}
+}
+
+
+div:nth-child(5n - 1).country.clicked {
+    border: 19px solid rgb(185, 207, 209);
+    width: fit-content;
+    color:rgb(169, 144, 175);
+    animation: mymove 1s infinite;
+    transform: scale(2); 
+}
+@keyframes mymove {
+    50% {color:rgb(129, 163, 185)}
+}
+
+
+
+div:nth-child(5n).country.clicked {
+    border: 7px solid rgb(105, 105, 73);
+    color: rgb(147, 101, 62);
+}
+#myDIV:nth-child(10n-9){
+    
 
 h2, h3 {
     width: fit-content;
